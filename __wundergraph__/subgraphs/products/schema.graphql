@@ -74,6 +74,7 @@ enum ProductName {
 union Products = Consultancy | Cosmo | Documentation
 
 type Query {
+  a: Boolean
   factTypes: [TopSecretFactType!]
   sharedThings(numOfA: Int!, numOfB: Int!): [Thing!]! @shareable
   topSecretFederationFacts: [TopSecretFact!]! @requiresScopes(scopes: [["read:fact"], ["read:all"]])
