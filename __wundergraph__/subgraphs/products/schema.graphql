@@ -75,7 +75,7 @@ union Products = Consultancy | Cosmo | Documentation
 
 type Query {
   factTypes: [TopSecretFactType!]
-  productTypes: [Products!]!
+  productTypes2: [Products!]!
   sharedThings(numOfA: Int!, numOfB: Int!): [Thing!]! @shareable
   topSecretFederationFacts: [TopSecretFact!]! @requiresScopes(scopes: [["read:fact"], ["read:all"]])
 }
